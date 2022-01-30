@@ -1,0 +1,59 @@
+svg {
+    height: 48vh;
+    display: block;
+    margin: auto;
+    position: static;
+    top: 0;
+    left: 50%;
+    transform: translateX(-8%);
+    margin-bottom: -40px;
+}
+
+h3 {
+    margin-left: 10vw;
+    font-size: 2em;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.container {
+    height: 40vh;
+    display: block;
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    text-align: left;
+    /* text-justify: auto; */
+    overflow-x: hidden;
+    overflow-y: auto;
+    scroll-snap-type: y mandatory;
+}
+
+.child {
+    height: 40vh;
+    scroll-snap-align: start;
+    font-size: 1.5em;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    overflow-y: auto;
+    padding-right: 2vw;
+}
+
+#region-name {
+    font-size: 0.7em;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 90vw;
+        height: 58vh;
+    }
+
+    svg {
+        height: 40vh;
+    }
+
+    h3 {
+        font-size: 1.2 em;
+    }
+}
